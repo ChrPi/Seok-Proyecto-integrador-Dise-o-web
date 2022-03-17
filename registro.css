@@ -1,0 +1,187 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-image: url('./img/portada5.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        header {
+            width: 100%;
+            background: rgb(95, 1, 1);
+        }
+        
+        #btn-menu {
+            display: none;
+        }
+        
+        header label {
+            display: none;
+            width: 30px;
+            height: 30px;
+            padding: 10px;
+            border-right: 1px, solid, rgb(209, 56, 0);
+        }
+        
+        header label:hover {
+            cursor: pointer;
+            background: rgba(0, 0, 0, 0.3);
+        }
+        
+        .menu ul {
+            margin: 0;
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+        
+        .menu li a {
+            display: block;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        
+        .menu li:hover {
+            background: rgba(0, 0, 0, 0.3);
+        }
+        
+        .menu li {
+            flex-grow: 1;
+            border-right: 3px, solid, rgb(240, 177, 4);
+        }
+        
+        section {
+            width: 100%;
+            margin-bottom: 25px;
+        }
+        
+        .form-register {
+            width: 400px;
+            background: #7a0303b4;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 30px;
+            margin: auto;
+            margin-top: 100px;
+            border-radius: 4px;
+            font-family: 'calibri';
+            color: white;
+            box-shadow: 7px 13px 37px #000;
+        }
+        
+        .form-register h4 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 35px;
+        }
+        
+        .controls {
+            width: 100%;
+            background: #3f0303bd;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 16px;
+            border: 1px solid #c51f1f;
+            font-family: 'calibri';
+            font-size: 18px;
+            color: white;
+        }
+        
+        .form-register p {
+            height: 40px;
+            text-align: center;
+            font-size: 18px;
+            line-height: 40px;
+        }
+        
+        .form-register .botons {
+            background: rgb(171, 11, 11);
+            background: linear-gradient(0deg, rgba(171, 11, 11, 1) 35%, rgba(228, 16, 16, 1) 51%, rgba(172, 7, 7, 1) 71%);
+            color: white;
+            padding: 20px;
+            border-radius: 7px;
+            margin: auto;
+            margin-left: 0;
+            margin-right: 0;
+            justify-content: center;
+            cursor: pointer;
+        }
+        
+        .general {
+            margin-top: 25px;
+            display: flex;
+        }
+        
+        .esp {
+            flex: 1 0 25%;
+            flex: 1 0 25%;
+        }
+        
+        .esp form {
+            width: 95%;
+            height: 95%;
+            background-size: cover;
+            background-position: center;
+            padding: 5px;
+            margin: 5px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .copy {
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+        }
+        
+        footer {
+            background-color: rgb(95, 1, 1);
+        }
+        
+        footer .contenedor {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-bottom: 25px;
+        }
+        
+        .sociales {
+            width: 100%;
+            text-align: center;
+            font-size: 28px;
+        }
+        
+        .sociales a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            header label {
+                display: block;
+            }
+            .menu {
+                position: absolute;
+                background-color: rgb(95, 1, 1);
+                width: 70%;
+                margin-left: -70%;
+                transition: all 0.5s;
+            }
+            .menu ul {
+                flex-direction: column;
+            }
+            .menu li {
+                border-top: 3px, solid, rgb(240, 177, 4);
+            }
+            #btn-menu:checked~.menu {
+                margin: 0;
+            }
+        }
